@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatBot Web</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <main>
+        <section id="seccion-1" class="active">
+            <div class="botones">
+                <button id="agregar-datos"  class="btn">Agregar datos</button>
+                <button id="ir-chat" class="btn">Ir al chat</button>
+            </div>
+        </section>
+        <section id="seccion-2">
+            <div class="content-form">
+                <h3>GUARDAR DATOS PARA BOT</h3>
+                <form id="form-data">
+                    <label for="pregunta">
+                        <span>Pregunta</span>
+                        <input type="text" name="pregunta" id="pregunta" required>
+                    </label>
+                    <label for="respuesta">
+                        <span>Respuesta</span>
+                        <input type="text" name="respuesta" id="respuesta" required>
+                    </label>
+                    <input type="submit" value="GUARDAR">
+                </form>
+                <p class="mensaje-guardar d-none">Datos guardados correctamente</p>
+            </div>
+        </section>
+        <section id="seccion-3">
+            <div class="ventana">
+                <article class="ventana-header">
+                    <div class="content-header">
+                        <figure>
+                            <img src="./img/logo.png" alt="logo chat">
+                        </figure>
+                        <div class="titulo-header">
+                            <p><strong>ChatBot</strong></p>
+                            <small>activo</small>
+                        </div>
+                        <button class="cerrar-ventana">x</button>
+                    </div>
+                </article>
+                <article class="ventana-body"></article>
+                <article class="ventana-footer">
+                    <form id="agregar-item">
+                        <input type="text" name="mensaje" id="mensaje" required placeholder="Escribe tu mensaje"> 
+                        <button type="submit"><img src="./img/logo-enviar.png" alt="logo de enviar"></button>
+                    </form>
+                </article>
+            </div>
+        </section>
+    </main>
+    <script src="./js/funciones.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
